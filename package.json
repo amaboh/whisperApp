@@ -1,0 +1,38 @@
+{
+  "name": "whisperapp",
+  "version": "1.0.0",
+  "description": "story book app for personal journals ",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "cross-env NODE_ENV=development nodemon app"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amaboh/whisperApp.git"
+  },
+  "author": "Amabo with an H",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amaboh/whisperApp/issues"
+  },
+  "homepage": "https://github.com/amaboh/whisperApp#readme",
+  "dependencies": {
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "express-handlebars": "^6.0.5",
+    "express-session": "^1.17.2",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.3",
+    "mongoose": "^6.3.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.5.2",
+    "passport-google-oauth20": "^2.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.16"
+  }
+}
