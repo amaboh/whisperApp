@@ -12,17 +12,21 @@
     <title>StoryBooks</title>
 </head>
 <body> 
-    {{> header}}
-    {{>_add_btn}}
+    {{> _header}}
+    {{> _add_btn}}
     <div class="container">
         {{{body}}}
     </div>
     
 
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.18.0/ckeditor.js" integrity="sha512-woYV6V3QV/oH8txWu19WqPPEtGu+dXM87N9YXP6ocsbCAH1Au9WDZ15cnk62n6/tVOmOo0rIYwx05raKdA4qyQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
      <script>
          M.Sidenav.init(document.querySelector('.sidenav'))
          M.FormSelect.init(document.querySelector('#status'))
+         CKEDITOR.replace('body', {
+             plugins: 'wysiwygarea, toolbar, basicstyles, link'
+         })
      </script> 
 </body>
 </html>
